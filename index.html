@@ -314,13 +314,12 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
   }
   .contact-list li{
     display: flex;
-    gap: 10px;
-    align-items: baseline;
-    font-size: 0.96rem;
+    flex-direction: column;
+    gap: 2px;
   }
   .contact-list .label{
     font-family: var(--mono);
@@ -328,8 +327,9 @@
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    width: 70px;
-    flex-shrink: 0;
+  }
+  .contact-list .value{
+    font-size: 0.98rem;
   }
 
   footer{
@@ -508,9 +508,22 @@
   <div class="wrap">
     <h2 class="section-title"><span class="title-text">Contact</span></h2>
     <ul class="contact-list">
-      <li><span class="label">Email</span> <a href="mailto:laura.bonisoli@univr.it">laura.bonisoli@univr.it</a></li>
-      <li><span class="label">Address</span> Department of Economics, University of Verona — Via Cantarane 24, 37129 Verona, Italy</li>
-      <li><span class="label">Office</span> Room 1.13, Palazzo Santa Marta</li>
+      <li>
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:laura.bonisoli@univr.it">laura.bonisoli@univr.it</a></span>
+      </li>
+      <li>
+        <span class="label">Institution</span>
+        <span class="value">Department of Economics, University of Verona</span>
+      </li>
+      <li>
+        <span class="label">Address</span>
+        <span class="value">Via Cantarane 24, 37129 Verona, Italy</span>
+      </li>
+      <li>
+        <span class="label">Office</span>
+        <span class="value">Palazzo Santa Marta, Room 1.13</span>
+      </li>
     </ul>
   </div>
 </section>
