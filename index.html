@@ -135,6 +135,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 15%;
     display: block;
   }
   @media (max-width: 640px){
@@ -247,7 +248,7 @@
     .interests{ grid-template-columns: 1fr; }
   }
 
-  /* Entry list (publications / talks / teaching) */
+  /* Entry list (publications / talks / organization / teaching) */
   .entries{
     display: flex;
     flex-direction: column;
@@ -320,6 +321,7 @@
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#talks">Talks</a>
+      <a href="#organization">Organization</a>
       <a href="#teaching">Teaching</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -429,7 +431,29 @@
   </div>
 </section>
 
-<section id="teaching">
+<section id="organization">
+  <div class="wrap">
+    <h2 class="section-title">Conference organization</h2>
+    <div class="entries">
+      <div class="entry">
+        <div class="date">Jun 2025</div>
+        <div class="content">
+          <p><em>12th General AMaMeF Conference</em></p>
+          <p class="venue">Co-organizer — Verona, 23–27 June 2025</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="date"><!-- inserisci data --></div>
+        <div class="content">
+          <p><em>3rd Early Career Workshop in Economics</em></p>
+          <p class="venue">Co-organizer — <!-- inserisci luogo e data --></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="teaching" class="alt">
   <div class="wrap">
     <h2 class="section-title">Teaching experience</h2>
     <div class="entries">
@@ -451,7 +475,7 @@
   </div>
 </section>
 
-<section id="contact" class="alt">
+<section id="contact">
   <div class="wrap">
     <h2 class="section-title">Contact</h2>
     <ul class="contact-list">
